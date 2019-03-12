@@ -1,16 +1,16 @@
 <nav>
-  <a routerLink="/dashboard">Home</a>
+  <a routerLink="/">Home</a>
   <div class="row">
     <div class="col">
       <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary" id="dropdownBasic1" (mouseover)='over()' ngbDropdownToggle>Info</button>
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Info</button>
         <div class="dd" ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button class="btn" ngbDropdownItem>General</button>
-          <button class="btn" ngbDropdownItem>Associations</button>
-          <button class="btn" ngbDropdownItem>Accomplishments</button>
+          <a routerLink="/general" ngbDropdownItem>General</a>
+          <a routerLink="/associations" ngbDropdownItem>Associations</a>
+          <a routerLink="/accomplishments" ngbDropdownItem>Accomplishments</a>
         </div>
       </div>
     </div>
   </div>
-  <a routerLink="/aboutme">About Me</a>
+  <a routerLink="/about-me">About Me</a>
 </nav>
